@@ -53,7 +53,6 @@ main {
 }
 @media (max-width: 500px) {
   .item {
-    width: calc(33.333% - 6.66px); /* 3 colunas no mobile */
     font-size: 40px;
   }
 }
