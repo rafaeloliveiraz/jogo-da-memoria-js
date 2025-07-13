@@ -21,14 +21,18 @@ Um jogo da memória feito em JavaScript puro com emojis divertidos! Clique em du
 👉 [Jogar agora](https://rafaeloliveiraz.github.io/jogo-da-memoria-js)
 
 ## 📂 Estrutura do projeto
+```
+  📁 /src
+  └── 📁 audio/
+      └── match.mp3
+  └── 📁 css/
+      └── 📄 reset.css
+      └── 📄 style.css
+  └── 📁 js/
+      └── 📄 engine.js
+  📄 index.html
 
-📁 /src
-└── 📁 audio/
-└── match.mp3
-📄 index.html
-📄 style.css
-📄 script.js
-
+```
 ## 🛠️ Tecnologias
 
 - HTML
