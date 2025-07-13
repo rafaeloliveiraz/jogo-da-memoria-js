@@ -15,7 +15,8 @@ main {
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0px 10px 15px -10px #000;
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,8 +27,8 @@ main {
 
 .game {
   /* border: 1px solid red; */
-  height: 430px;
-  width: 430px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -39,8 +40,8 @@ main {
 
 .item {
   position: relative;
-  height: 100px;
-  width: 100px;
+  width: calc(25% - 7.5px); /* 4 colunas com gap de 10px */
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +50,11 @@ main {
   font-size: 55px;
   transform: rotateY(180deg);
   transition: 0.5s;
+}
+@media (max-width: 500px) {
+  .item {
+    width: calc(33.333% - 6.66px); /* 3 colunas no mobile */
+  }
 }
 
 .item::after {
