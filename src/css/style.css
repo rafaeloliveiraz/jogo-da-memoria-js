@@ -34,7 +34,7 @@ main {
   gap: 10px;
   transform-style: preserve-3d;
   perspective: 500px;
-  --webkit-user-select: none;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -54,6 +54,7 @@ main {
 @media (max-width: 500px) {
   .item {
     width: calc(33.333% - 6.66px); /* 3 colunas no mobile */
+    font-size: 40px;
   }
 }
 
@@ -109,4 +110,9 @@ footer {
 /* Geral */
 body {
   background: #c4d3f6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
